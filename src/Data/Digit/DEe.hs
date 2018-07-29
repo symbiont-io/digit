@@ -2,7 +2,7 @@
 {-# LANGUAGE ConstraintKinds #-}
 
 module Data.Digit.DEe(
-  module Data.Digit.DE
+  module Data.Digit.DE1
 , module Data.Digit.De
 , DEe
 , parseEe
@@ -10,7 +10,7 @@ module Data.Digit.DEe(
 
 import Text.Parser.Char(CharParsing)
 import Text.Parser.Combinators((<?>), choice)
-import Data.Digit.DE
+import Data.Digit.DE1
 import Data.Digit.De
 
 -- $setup
@@ -21,7 +21,7 @@ import Data.Digit.De
 
 type DEe a =
   (DE a, De a)
-  
+
 -- |
 --
 -- >>> parse (parseEe <* eof) "test" "E" :: Either ParseError HeXDigit

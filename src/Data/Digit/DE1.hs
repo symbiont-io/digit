@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Data.Digit.DE(
+module Data.Digit.DE1(
   DE(..)
 , parseE
 ) where

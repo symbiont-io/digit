@@ -2,7 +2,7 @@
 {-# LANGUAGE ConstraintKinds #-}
 
 module Data.Digit.DBb(
-  module Data.Digit.DB
+  module Data.Digit.DB1
 , module Data.Digit.Db
 , DBb
 , parseBb
@@ -10,7 +10,7 @@ module Data.Digit.DBb(
 
 import Text.Parser.Char(CharParsing)
 import Text.Parser.Combinators((<?>), choice)
-import Data.Digit.DB
+import Data.Digit.DB1
 import Data.Digit.Db
 
 -- $setup
@@ -21,7 +21,7 @@ import Data.Digit.Db
 
 type DBb a =
   (DB a, Db a)
-  
+
 -- |
 --
 -- >>> parse (parseBb <* eof) "test" "B" :: Either ParseError HeXDigit

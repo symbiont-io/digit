@@ -2,7 +2,7 @@
 {-# LANGUAGE ConstraintKinds #-}
 {-# LANGUAGE TemplateHaskell #-}
 
-module Data.Digit.HEXADECIMAL(
+module Data.Digit.Hexa2(
   HEXDigit(..)
 , HEXADECIMALNoZero
 , HEXADECIMAL
@@ -36,12 +36,12 @@ module Data.Digit.HEXADECIMAL(
 , module Data.Digit.D7
 , module Data.Digit.D8
 , module Data.Digit.D9
-, module Data.Digit.DA
-, module Data.Digit.DB
-, module Data.Digit.DC
-, module Data.Digit.DD
-, module Data.Digit.DE
-, module Data.Digit.DF
+, module Data.Digit.DA1
+, module Data.Digit.DB1
+, module Data.Digit.DC1
+, module Data.Digit.DD1
+, module Data.Digit.DE1
+, module Data.Digit.DF1
 ) where
 
 import Prelude (Eq, Show, Ord)
@@ -58,12 +58,12 @@ import Data.Digit.D6
 import Data.Digit.D7
 import Data.Digit.D8
 import Data.Digit.D9
-import Data.Digit.DA
-import Data.Digit.DB
-import Data.Digit.DC
-import Data.Digit.DD
-import Data.Digit.DE
-import Data.Digit.DF
+import Data.Digit.DA1
+import Data.Digit.DB1
+import Data.Digit.DC1
+import Data.Digit.DD1
+import Data.Digit.DE1
+import Data.Digit.DF1
 import Data.Digit.Decimal(parseDecimalNoZero)
 
 data HEXDigit

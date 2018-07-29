@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Data.Digit.DB(
+module Data.Digit.DB1(
   DB(..)
 , parseB
 ) where

@@ -2,7 +2,7 @@
 {-# LANGUAGE ConstraintKinds #-}
 {-# LANGUAGE TemplateHaskell #-}
 
-module Data.Digit.HeXaDeCiMaL(
+module Data.Digit.Hexa1(
   HeXDigit(..)
 , HeXaDeCiMaLNoZero
 , HeXaDeCiMaL

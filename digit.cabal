@@ -53,8 +53,8 @@ library
                     Data.Digit.Decimal
                     Data.Digit.Octal
                     Data.Digit.Hexadecimal
-                    Data.Digit.HeXaDeCiMaL
-                    Data.Digit.HEXADECIMAL
+                    Data.Digit.Hexa1
+                    Data.Digit.Hexa2
                     Data.Digit.D0
                     Data.Digit.D1
                     Data.Digit.D2
@@ -66,17 +66,17 @@ library
                     Data.Digit.D8
                     Data.Digit.D9
                     Data.Digit.Da
-                    Data.Digit.DA
+                    Data.Digit.DA1
                     Data.Digit.Db
-                    Data.Digit.DB
+                    Data.Digit.DB1
                     Data.Digit.Dc
-                    Data.Digit.DC
+                    Data.Digit.DC1
                     Data.Digit.Dd
-                    Data.Digit.DD
+                    Data.Digit.DD1
                     Data.Digit.De
-                    Data.Digit.DE
+                    Data.Digit.DE1
                     Data.Digit.Df
-                    Data.Digit.DF
+                    Data.Digit.DF1
                     Data.Digit.DAa
                     Data.Digit.DBb
                     Data.Digit.DCc

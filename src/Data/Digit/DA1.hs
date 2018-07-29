@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Data.Digit.DA(
+module Data.Digit.DA1(
   DA(..)
 , parseA
 ) where

@@ -5,7 +5,7 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 
 module Data.Digit.DAa(
-  module Data.Digit.DA
+  module Data.Digit.DA1
 , module Data.Digit.Da
 , DAa
 , parseAa
@@ -13,7 +13,7 @@ module Data.Digit.DAa(
 
 import Text.Parser.Char(CharParsing)
 import Text.Parser.Combinators((<?>), choice)
-import Data.Digit.DA
+import Data.Digit.DA1
 import Data.Digit.Da
 
 -- $setup
@@ -24,7 +24,7 @@ import Data.Digit.Da
 
 type DAa a =
   (DA a, Da a)
-  
+
 -- |
 --
 -- >>> parse (parseAa <* eof) "test" "A" :: Either ParseError HeXDigit

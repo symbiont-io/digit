@@ -2,7 +2,7 @@
 {-# LANGUAGE ConstraintKinds #-}
 
 module Data.Digit.DDd(
-  module Data.Digit.DD
+  module Data.Digit.DD1
 , module Data.Digit.Dd
 , DDd
 , parseDd
@@ -10,7 +10,7 @@ module Data.Digit.DDd(
 
 import Text.Parser.Char(CharParsing)
 import Text.Parser.Combinators((<?>), choice)
-import Data.Digit.DD
+import Data.Digit.DD1
 import Data.Digit.Dd
 
 -- $setup
@@ -21,7 +21,7 @@ import Data.Digit.Dd
 
 type DDd a =
   (DD a, Dd a)
-  
+
 -- |
 --
 -- >>> parse (parseDd <* eof) "test" "D" :: Either ParseError HeXDigit

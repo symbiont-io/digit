@@ -2,7 +2,7 @@
 {-# LANGUAGE ConstraintKinds #-}
 
 module Data.Digit.DFf(
-  module Data.Digit.DF
+  module Data.Digit.DF1
 , module Data.Digit.Df
 , DFf
 , parseFf
@@ -10,7 +10,7 @@ module Data.Digit.DFf(
 
 import Text.Parser.Char(CharParsing)
 import Text.Parser.Combinators((<?>), choice)
-import Data.Digit.DF
+import Data.Digit.DF1
 import Data.Digit.Df
 
 -- $setup
@@ -21,7 +21,7 @@ import Data.Digit.Df
 
 type DFf a =
   (DF a, Df a)
-  
+
 -- |
 --
 -- >>> parse (parseFf <* eof) "test" "F" :: Either ParseError HeXDigit

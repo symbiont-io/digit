@@ -2,7 +2,7 @@
 {-# LANGUAGE ConstraintKinds #-}
 
 module Data.Digit.DCc(
-  module Data.Digit.DC
+  module Data.Digit.DC1
 , module Data.Digit.Dc
 , DCc
 , parseCc
@@ -10,7 +10,7 @@ module Data.Digit.DCc(
 
 import Text.Parser.Char(CharParsing)
 import Text.Parser.Combinators((<?>), choice)
-import Data.Digit.DC
+import Data.Digit.DC1
 import Data.Digit.Dc
 
 -- $setup
@@ -21,7 +21,7 @@ import Data.Digit.Dc
 
 type DCc a =
   (DC a, Dc a)
-  
+
 -- |
 --
 -- >>> parse (parseCc <* eof) "test" "C" :: Either ParseError HeXDigit

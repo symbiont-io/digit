@@ -21,7 +21,7 @@ import Control.Lens.Review ((#))
 import Data.Digit.Binary
 import Data.Digit.Decimal
 import Data.Digit.Hexadecimal
-import Data.Digit.HEXADECIMAL
+import Data.Digit.Hexa2
 import Data.Digit.Octal
 
 -- | @[1]@

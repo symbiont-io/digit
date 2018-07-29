@@ -38,8 +38,8 @@ import Data.Digit.Binary
 import Data.Digit.Decimal
 import Data.Digit.Octal
 import Data.Digit.Hexadecimal
-import Data.Digit.HEXADECIMAL
-import Data.Digit.HeXaDeCiMaL
+import Data.Digit.Hexa2
+import Data.Digit.Hexa1
 import qualified Data.List.NonEmpty as NonEmpty
 import Papa
 
@@ -60,7 +60,7 @@ integralBinaryNoZero ::
     d
 integralBinaryNoZero =
   associatePrism (1, d1) []
-  
+
 -- |
 --
 -- >>> 0 ^? integralBinary :: Maybe BinDigit
@@ -201,7 +201,7 @@ integralDecimalNoZero ::
     d
 integralDecimalNoZero =
   associatePrism (1, d1) [(2, d2), (3, d3), (4, d4), (5, d5), (6, d6), (7, d7), (8, d8), (9, d9)]
-  
+
 -- |
 -- >>> 9 ^? integralDecimal :: Maybe DecDigit
 -- Just DecDigit9
@@ -271,7 +271,7 @@ integralHexadecimalNoZero ::
     d
 integralHexadecimalNoZero =
   associatePrism (1, d1) [(2, d2), (3, d3), (4, d4), (5, d5), (6, d6), (7, d7), (8, d8), (9, d9), (10, da), (11, db), (12, dc), (13, dd), (14, de), (15, df)]
-  
+
 -- |
 --
 -- >>> 15 ^? integralHexadecimal :: Maybe HexDigit
@@ -342,7 +342,7 @@ integralHEXADECIMALNoZero ::
     d
 integralHEXADECIMALNoZero =
   associatePrism (1, d1) [(2, d2), (3, d3), (4, d4), (5, d5), (6, d6), (7, d7), (8, d8), (9, d9), (10, dA), (11, dB), (12, dC), (13, dD), (14, dE), (15, dF)]
-  
+
 
 -- |
 --

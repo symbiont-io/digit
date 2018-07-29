@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Data.Digit.DF(
+module Data.Digit.DF1(
   DF(..)
 , parseF
 ) where

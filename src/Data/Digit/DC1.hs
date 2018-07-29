@@ -1,6 +1,6 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 
-module Data.Digit.DC(
+module Data.Digit.DC1(
   DC(..)
 , parseC
 ) where
